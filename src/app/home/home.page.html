@@ -1,0 +1,446 @@
+
+<ion-header *ngIf="!isShown" [translucent]="true">
+  <div style="float: left;margin-left: 2vw;margin-bottom: 1vh;margin-top: 1vh;">
+    <ion-icon  name="call-outline"></ion-icon>&nbsp; <a href="tel:+97338884797">+973 3888 4797</a>&nbsp;
+    <a href="tel:+97333399917">+973 3339 9917</a>&nbsp;
+    <ion-icon  name="mail-outline"></ion-icon>&nbsp;<span (click)="mailto('info@microtopesolution.com')">
+      <a href=''>info@microtopesolution.com</a>
+                        </span>
+
+  </div>
+  
+
+  <div style="float: right;margin-right: 2vw;margin-bottom: 1vh;margin-top: 1vh   ;font-size: 20px;">
+    <ion-icon class="trans" color="secondary" name="logo-facebook"></ion-icon>&nbsp;
+    <ion-icon class="trans" color="secondary" name="logo-instagram"></ion-icon>&nbsp;
+    <ion-icon class="trans" color="secondary" name="logo-linkedin"></ion-icon>
+  </div>
+     </ion-header>
+
+     <ion-header [translucent]="true">
+      <ion-segment   [(ngModel)]="seg" color="secondary">
+        <ion-segment-button  (click)="scrollTo('home')" value="Home">
+          <ion-label >Home</ion-label>
+        </ion-segment-button>
+        <ion-segment-button (click)="scrollTo('services')" value="Services">
+          <ion-label>Services</ion-label>
+        </ion-segment-button>
+        <ion-segment-button (click)="scrollTo('about')" value="About">
+          <ion-label>About</ion-label>
+        </ion-segment-button>
+        <ion-segment-button (click)="scrollTo('team')" value="Team">
+          <ion-label>Team</ion-label>
+        </ion-segment-button>
+        <ion-segment-button (click)="scrollTo('contact')" value="Contact Us">
+          <ion-label>Contact Us</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+         </ion-header>
+     
+
+<ion-content  [scrollEvents]="true"
+(ionScrollStart)="logScrollStart()"
+(ionScroll)="logScrolling()"
+(ionScrollEnd)="logScrollEnd()" padding  > 
+  
+  
+    <div class="mybg " id="home" >
+      <div >
+         <ion-col >
+        <ion-card class="baraimg" >
+         <img style="width: 25%;" src="../../assets/microtop-logo.png">
+          
+          <ion-card-subtitle>     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+            <h1 >We Love To Develop
+              <span
+                 class="txt-rotate"
+                 data-period="2000"
+                 data-rotate='[ "Websites.", "Mobile Apps.", "Games." ]'></span>
+            </h1></ion-card-subtitle>
+
+     
+          <ion-card-content>
+          
+          </ion-card-content>
+        
+        </ion-card>
+      </ion-col>
+      </div>
+     
+    </div>
+    <div class="back" style="text-align: center;">
+      <!-- our services -->
+      <p class="ser" id="services" style="color: gray;">Our Services</p>
+      <ion-row>
+        <ion-col class="box">
+          <ion-card  >
+            <ion-card-header>
+              <ion-card-title><h3>Web Development</h3></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <h2>Homepages</h2>
+              <h2>E-commerce websites</h2>
+              <h2>Landing pages</h2>
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+        <ion-col class="box" >
+          <ion-card  >
+            <ion-card-header>
+              <ion-card-title><h3>Mobile Applications</h3></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <h2>Android Applications</h2>
+              <h2>iOS Applications</h2>
+              <h2>Cross-Platform Applications</h2>
+            </ion-card-content>
+          
+            
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="box">
+          <ion-card >
+            <ion-card-header>
+              <ion-card-title><h3>Game Development</h3></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <h2>Role Playing Games</h2>
+              <h2>Massively Multiplayer Online</h2>
+              <h2>Educational Games</h2>
+            </ion-card-content>
+          
+            
+          </ion-card>
+        </ion-col>
+        <ion-col class="box">
+          <ion-card >
+            <ion-card-header>
+              <ion-card-title><h3>Social Media Marketing</h3></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <h2>Planning and Publishing</h2>
+              <h2>Listening and Engagement</h2>
+              <h2>Analytics & Advertising</h2>
+            </ion-card-content>
+          
+           
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <!-- about us -->
+      <!-- <div class="line"></div> -->
+      <div   style="text-align: left;line-height: 2;">
+        <ion-row >
+          <ion-col id="about" style="margin-right: 30px;margin-left: 30px;color: gray;">
+            <p   style="font-size: 2.2em;margin-top: 120px;">About Us</p>
+            <p ><span style="color: #3880ff;">Microtop</span> is an industry leader in professional website design, strategy, mobile development, and hosting. We're truly a one-stop shop offering a full range of solutions for anyone looking to succeed in their online endeavors. <span style="color: #3880ff;">Microtop</span> is a privately held company with a long history of profitability and stability.</p>
+         <p>In addition to experience, another key to our success is our commitment and dedication to providing the best possible customer service to our clients. While other companies claim to provide top-notch customer service, <span style="color: #3880ff;">Microtop</span> actually delivers customer service that is unparalleled in the industry.</p>
+        <p><span style="color: #3880ff;">Microtop</span> knows of no other company in our field that can do everything we do - from concept to design and development, to hosting, marketing, then maintaining websites - for as long and successfully as we have.</p>
+        
+      <ion-row >
+        <ion-col>
+          <ion-card style="line-height: 2;" >
+            <ion-card-header>
+              <ion-icon style="font-size: 35px;" name="laptop-outline"></ion-icon>
+              <ion-card-title><h3 style="color: #3880ff;font-size: large;">Web & Mobile Specialties</h3></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p style="font-size: medium;line-height: 2;" >Together we’ll achieve all online victories: innovative websites, amazing mobile applications, efficient eCommerce web apps and powerful digital marketing.</p>
+            </ion-card-content>
+          
+           
+          </ion-card>
+
+        </ion-col>
+        <ion-col>
+          <ion-card style="line-height: 2;" >
+            <ion-card-header>
+              <ion-icon style="font-size: 35px;" name="bulb-outline"></ion-icon>
+              <ion-card-title><h3 style="color: #3880ff;font-size: large;">Intuitive Thinkers</h3></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p style="font-size: medium;line-height: 2;">As we solve problems and make decisions in our daily lives, we let our emotions guide us. And that’s a good thing because our “gut feelings” have been honed over evolutionary history to help us quickly and effortlessly achieve good enough outcomes.</p>
+            </ion-card-content>
+          
+           
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      
+      </ion-col>
+          <ion-col style="margin-right: 30px;margin-top: 80px;"><img   src="../../assets/abc.jpg"></ion-col>
+        </ion-row>
+         </div>
+        <!-- our team -->
+        <div id="team">
+          <p class="ser" style="margin-top: 50px;color: whitesmoke;" >Our Team</p>
+
+          <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p style="color: gray;">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p style="color: gray;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <p class="card-text">37137144</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p style="color: gray;">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p style="color: gray;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <p class="card-text">37137144</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="../../assets/IMG_1904.JPG" alt="card image"></p>
+                                    <h4 class="card-title">Faisal Alblooshi</h4>
+                                    <p  style="color: gray;">Senior Web Developer <br/>Expertise: Back-End</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Faisal Alblooshi</h4>
+                                    <p style="color: gray;font-size: medium;">Faisal is a web and software developer with a passion for taking seemingly complex problems and forming unique solutions. Being a University of Bahrain graduate Faisal continues to push his knowledge-base into new languages and frameworks in order to expand his foundations as a developer.  While not in front of his screens, Faisal enjoys both watching and participating in sports, primarily Soccer</p>
+                                    <p class="card-text">+973 37137144</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+        </div>
+    </div>
+</section>
+<!-- Team -->
+        </div>
+         <!-- contact us -->
+         <div id="contact"  >
+          <p class="ser" style="margin-top: 30px;color: gray;" >Contact Us</p>
+          <ion-row>
+            <ion-col class="mycol">
+              <form  [formGroup]="contactUs" (ngSubmit)="onSubmit(contactUs.value)">
+           <ion-card style="background: transparent;"  no-margin>
+            <ion-card-header>Have any questions? We'd love to hear from you.</ion-card-header>
+            <ion-row>
+              <ion-col >
+                 <ion-label style="color: #3880ff;font-size: 1.2em;" position="stacked">First Name</ion-label>
+                 <ion-input  clearInput class="input" formControlName="FirstName" type="text">
+                 </ion-input>
+              </ion-col>
+              <ion-col>
+                 <ion-label style="color: #3880ff;font-size: 1.2em;" position="stacked">Last Name</ion-label>
+                 <ion-input clearInput class="input" formControlName="LastName" type="text">
+                 </ion-input>
+             </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                  <ion-label style="color: #3880ff;font-size: 1.2em;" position="stacked">E-mail</ion-label>
+                  <ion-input clearInput class="input" formControlName="email" type="email">
+                  </ion-input>
+              </ion-col>
+              <ion-col>
+                  <ion-label style="color: #3880ff;font-size: 1.2em;" position="stacked">Contact</ion-label>
+                  <ion-input clearInput class="input" formControlName="Mobile" >
+                  </ion-input>
+              </ion-col>
+            </ion-row>
+            
+            <ion-label style="color: #3880ff;font-size: 1.2em;text-align: left;" position="stacked">Tell us More</ion-label>
+            <ion-textarea class="txtarea" formControlName="more" ></ion-textarea>
+            
+              <ion-label style="color: #3880ff;font-size: 1.2em;text-align: left;" position="stacked">I need information regarding</ion-label>
+           <ion-row>
+             <ion-col><ion-item>
+              <ion-label style="color: #3880ff;">Web Development</ion-label>
+              <ion-checkbox   mode="ios" slot="start" (click)="add('Web Development')" value="web" ></ion-checkbox>
+            </ion-item></ion-col>
+             <ion-col><ion-item>
+              <ion-label style="color: #3880ff;">Mobile Applications</ion-label>
+              <ion-checkbox   mode="ios" slot="start" (click)="add('Mobile Applications')"  value="mobile"></ion-checkbox>
+            </ion-item></ion-col>
+           </ion-row>
+              
+           <ion-row>
+             <ion-col><ion-item>
+                <ion-label style="color: #3880ff;">Game Development</ion-label>
+                <ion-checkbox   mode="ios" slot="start" value="game" (click)="add('Game Development')"></ion-checkbox>
+              </ion-item> </ion-col>
+             <ion-col><ion-item>
+                <ion-label style="color: #3880ff;">Social Media Marketing</ion-label>
+                <ion-checkbox (click)="add('Social Media Marketing')"  mode="ios" slot="start" value="social"></ion-checkbox>
+              </ion-item></ion-col>
+           </ion-row>
+            <ion-row>
+              <ion-col>
+ <ion-item>
+                <ion-label style="color: #3880ff;">Other.</ion-label>
+                <ion-checkbox  (click)="add('Other.')"  mode="ios" slot="start" value="other"></ion-checkbox>
+              </ion-item>
+              </ion-col>
+              <ion-col>
+
+              </ion-col>
+            </ion-row>
+              
+             
+            <ion-button  color="medium"  shape="round"  expand="full" type="submit"  [disabled]="!contactUs.valid" >Submit data</ion-button>
+           </ion-card>
+          
+
+         </form>
+            </ion-col>
+            <ion-col class="mycol">
+              <ion-card>
+                <ion-card-header>
+                 Get in touch.
+                </ion-card-header>
+                <ion-card class="fade">
+                  <ion-card-header >
+                    <ion-card-title>E-mail us at</ion-card-title>
+                  </ion-card-header>
+                
+                  <ion-card-content >
+                    <ion-icon name="mail-outline"></ion-icon> <span (click)="mailto('info@microtopesolution.com')">
+  <a href=''> info@microtopesolution.com</a>
+                    </span>
+                    
+                  </ion-card-content>
+                </ion-card>
+  
+                <ion-card class="fade">
+                  <ion-card-header>
+                    <ion-card-title>Contact us via 24/7 Hotline</ion-card-title>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                    <ion-icon name="call-outline"></ion-icon>&nbsp; <a href="tel:+97338884797">+973 3888 4797</a>&nbsp;&nbsp;
+                    <ion-icon name="call-outline"></ion-icon>&nbsp; <a href="tel:+97333399917">+973 3339 9917</a>
+                  </ion-card-content>
+                </ion-card>
+  
+                <ion-card class="fade">
+                  <ion-card-header>
+                    <ion-card-title>Meet Us At</ion-card-title>
+                  </ion-card-header>
+                
+                  <ion-card-content style="color: #3880ff;">
+                    <ion-icon name="location-outline"></ion-icon>Block 308, Road 333, Shop 343, Gudaibiya, Bahrain<br/>
+                    <ion-icon name="location-outline"></ion-icon> Block 538, Road 3849, House 1740, Diraz, Bahrain
+                  </ion-card-content>
+                </ion-card>
+  
+                <ion-card class="fade">
+                  <ion-card-header>
+                    <ion-card-title>Our Timings</ion-card-title>
+                  </ion-card-header>
+                
+                  <ion-card-content style="color: #3880ff;">
+                    <ion-icon name="time-outline"></ion-icon>   Saturday - Thursday 10:00 AM - 06:00 PM
+                  </ion-card-content>
+                </ion-card>
+                <form  [formGroup]="subscription" (ngSubmit)="onEmail(subscription.value)">
+                        
+                <ion-card class="fade" >
+                  <ion-card-header >
+                    <ion-card-title>Subscribe to our newsletter</ion-card-title>
+                  </ion-card-header>
+                
+                  <ion-card-content >
+                    <ion-row>
+                      <ion-col size="10" >
+                        <ion-input  [(ngModel)]="cusemail" formControlName="subemail" style="border: 1px solid grey;float: left;" placeholder="Type E-mail here"></ion-input>
+                        
+
+                      </ion-col>
+                      <ion-col >
+                        <ion-button type="submit" [disabled]="!subscription.valid" shape="round"  color="primary">  <ion-icon  name="arrow-forward-circle-outline"></ion-icon></ion-button>
+                      
+                 
+                      </ion-col>
+                    </ion-row>
+                  </ion-card-content>
+                </ion-card>
+              </form>
+  
+              </ion-card>
+             
+
+            </ion-col>
+          </ion-row>
+
+         </div>
+       
+         
+   
+  </div>
+      
+    
+    
+  <ion-toolbar  style="--background: gray;">
+    <p style="text-align: center;margin: 5px;"><img style="width: 8%;" src="../../assets/microtop-logo.png"></p>
+    
+    <p style="text-align: center;color: white;">Copyright © 2020 MICROTOP E-Solution. All Rights Reserved</p>
+  </ion-toolbar>
+</ion-content>
+

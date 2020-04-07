@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Admin Panel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="show" >
+    <ion-card *ngFor="let c of contactuses">
+      <ion-item>
+        <ion-label position="stacked">Date</ion-label>
+        <ion-input >{{c.date}}</ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col> <ion-item>
+        <ion-label position="stacked">First Name</ion-label>
+        <ion-input >{{c.fname}}</ion-input>
+      </ion-item></ion-col>
+        <ion-col>  <ion-item>
+        <ion-label position="stacked">Last Name</ion-label>
+        <ion-input >{{c.lname}}</ion-input>
+      </ion-item></ion-col>
+      </ion-row>
+     
+<ion-row>
+  <ion-col>
+<ion-item>
+        <ion-label position="stacked">E-mail</ion-label>
+        <ion-input >{{c.email}}</ion-input>
+      </ion-item>
+  </ion-col>
+  <ion-col>
+      <ion-item>
+        <ion-label position="stacked">Phone</ion-label>
+        <ion-input >{{c.phone}}</ion-input>
+      </ion-item>
+  </ion-col>
+</ion-row>
+    
+
+      
+
+    
+
+      <ion-item>
+        <ion-label position="stacked">Options</ion-label>
+        <ion-input >{{c.options}}</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">More</ion-label>
+        <ion-input >{{c.more}}</ion-input>
+      </ion-item>
+
+    </ion-card>
+
+  </ion-list>
+</ion-content>
